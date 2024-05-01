@@ -15,7 +15,7 @@ const router = require('./routers/tracker');
 
 var app = express();
 app.use(cors())
-var PORT = 8083;
+var PORT = 3000;
 var HOST_NAME = 'localhost';
 var DATABASE_NAME = 'shoppingList';
 
