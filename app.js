@@ -18,7 +18,7 @@ app.use(
     origin: "*",
   })
 );
-var PORT = 3000;
+var PORT = 4000;
 
 
 mongoose.connect("mongodb+srv://polymokashi12:taJoZqAwYbiihk4K@cluster0.ap6oe80.mongodb.net/?retryWrites=true&w=majority", {
@@ -52,5 +52,5 @@ app.use('/api', router);
 
 
 app.listen(PORT,()=>
-  console.log(`Listening on port http://localhost:${PORT}`)
+  console.log(`Listening on port ${process.env.Base_URL}`)
 );
